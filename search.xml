@@ -5,8 +5,8 @@
     
     <entry>
       <title>幸运下载器-更新日志</title>
-      <link href="/2019/04/20/%E5%B9%B8%E8%BF%90%E4%B8%8B%E8%BD%BD%E5%99%A8-%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
-      <url>/2019/04/20/%E5%B9%B8%E8%BF%90%E4%B8%8B%E8%BD%BD%E5%99%A8-%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</url>
+      <link href="/2019/04/20/update/"/>
+      <url>/2019/04/20/update/</url>
       
         <content type="html"><![CDATA[<h6 id="19-04-20："><a href="#19-04-20：" class="headerlink" title="19.04.20："></a>19.04.20：</h6><ol><li>新增QQ音乐歌单解析，下载的是320的mp3，其它以后写吧有点懒。</li><li>修复使用内置视频播放器切后台后自动退出播放器的bug</li><li>微调布局ui</li><li>修改界面切换的过渡动画</li></ol>]]></content>
       
