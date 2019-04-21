@@ -286,6 +286,8 @@
         
           
         
+          
+        
       
     
     
@@ -303,7 +305,94 @@
       
         
   <h2 class="title">
-    <a href="/2019/04/20/update/">
+    <a href="/2019/04/21/c语言作业/">
+      c语言作业
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="/jinxiaoshu�.github.io" rel="nofollow">
+      
+        <i class="fas fa-user" aria-hidden="true"></i>
+      
+      <p>禁小書</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-04-21</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <p>1.十进制转任意进制</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">	<span class="function"><span class="keyword">void</span> <span class="title">biu</span><span class="params">(<span class="keyword">int</span> a ,<span class="keyword">int</span> e)</span></span>;</div><div class="line">	<span class="keyword">int</span> a;</div><div class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;a);</div><div class="line">	biu(a, <span class="number">2</span>);</div><div class="line">	biu(a, <span class="number">4</span>);</div><div class="line">	biu(a, <span class="number">8</span>);</div><div class="line">	biu(a, <span class="number">10</span>);</div><div class="line">	biu(a, <span class="number">16</span>);</div><div class="line">	biu(a, <span class="number">32</span>);</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">biu</span><span class="params">(<span class="keyword">int</span> a ,<span class="keyword">int</span> e)</span> </span>&#123;</div><div class="line">	<span class="keyword">int</span> b[<span class="number">100</span>], c, i, d;</div><div class="line">	<span class="keyword">for</span>(i = <span class="number">0</span>; ; i++) &#123;</div><div class="line">		c = a / e;</div><div class="line">		b[i] = a % e;</div><div class="line">		<span class="keyword">if</span>(c == <span class="number">0</span>) <span class="keyword">break</span>;</div><div class="line">		a = c;</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">printf</span>(<span class="string">"%d\t-&gt;\t"</span>, e);</div><div class="line">	i++;</div><div class="line">	<span class="keyword">while</span>(i--)</div><div class="line">		<span class="keyword">if</span>(b[i] &gt; <span class="number">9</span>) <span class="built_in">printf</span>(<span class="string">"%c"</span>, b[i] + <span class="number">87</span>);</div><div class="line">		<span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">"%d"</span>, b[i]);</div><div class="line">	<span class="built_in">printf</span>(<span class="string">"\n"</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>2.计算字符串长度</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">	<span class="keyword">char</span> a[<span class="number">100</span>] = <span class="string">"ha0hduah\0uhdjajkdhs"</span>;</div><div class="line">	<span class="keyword">int</span> i;</div><div class="line">	<span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; <span class="keyword">sizeof</span>(a); i++)</div><div class="line">		<span class="keyword">if</span>(a[i] == <span class="number">0</span>) <span class="keyword">break</span>;</div><div class="line">	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>, i);</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/04/20/幸运下载器-更新日志/">
       幸运下载器-更新日志
     </a>
   </h2>
