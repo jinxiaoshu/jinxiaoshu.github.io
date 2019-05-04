@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>AndroidX</title>
+      <link href="/2019/04/30/JavaAndAndroid/AndroidX/"/>
+      <url>/2019/04/30/JavaAndAndroid/AndroidX/</url>
+      
+        <content type="html"><![CDATA[<h3 id="使用Android-Studio自动迁移"><a href="#使用Android-Studio自动迁移" class="headerlink" title="使用Android Studio自动迁移"></a>使用Android Studio自动迁移</h3><p>在菜单栏中依次进入Refactor &gt; Migrate to AndroidX，之后as会提示备份项目，如果已备份就不用勾选备份选项。</p><h3 id="MaterialComponents控件"><a href="#MaterialComponents控件" class="headerlink" title="MaterialComponents控件"></a>MaterialComponents控件</h3><ul><li>Bottom App Bars</li><li>Bottom Navigation</li><li>Bottom Sheets</li><li>Chips</li><li>Collapsing Toolbars</li><li>Floating Action Buttons</li><li>Meiter Botton</li><li>Meiter Card</li><li>Meiter Bottom Sheets</li><li>Navigation Views</li><li>Snackbars</li><li>Tab Layout</li><li><a href="https://material.io/design/components/text-fields.html" target="_blank" rel="external">Text fields</a> ： <a href="https://www.jianshu.com/p/4c99e4c0fe90" target="_blank" rel="external">TextInputLayout</a> ，TextInputEditText</li><li>Top App Bars</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//implementation 'com.google.android.material:material:1.0.0'</span></div><div class="line">implementation <span class="string">'com.google.android.material:material:1.1.0-alpha05'</span></div></pre></td></tr></table></figure><table><thead><tr><th><strong>Material Design——Text fields  最下面有目录</strong></th><th><a href="https://www.jianshu.com/p/4fd95f83ceca" target="_blank" rel="external">https://www.jianshu.com/p/4fd95f83ceca</a></th></tr></thead><tbody><tr><td><strong>Material Design — App bars: bottom 最下面有目录</strong></td><td><a href="https://www.jianshu.com/p/3c0d5e4eba04" target="_blank" rel="external">https://www.jianshu.com/p/3c0d5e4eba04</a></td></tr><tr><td><strong>官方</strong></td><td><a href="https://material.io/develop/android/components/material-button/" target="_blank" rel="external">https://material.io/develop/android/components/material-button/</a></td></tr><tr><td><strong>BottomSheet效果的两种实现方式</strong></td><td><a href="https://www.jianshu.com/p/ae866a43c8e3" target="_blank" rel="external">https://www.jianshu.com/p/ae866a43c8e3</a></td></tr><tr><td><strong>看，这个工具栏能伸缩折叠——Android CollapsingToolbarLayout使用介绍</strong></td><td><a href="https://www.jianshu.com/p/06c0ae8d9a96" target="_blank" rel="external">https://www.jianshu.com/p/06c0ae8d9a96</a></td></tr><tr><td></td></tr></tbody></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>c语言作业</title>
       <link href="/2019/04/21/c%E8%AF%AD%E8%A8%80%E4%BD%9C%E4%B8%9A/"/>
       <url>/2019/04/21/c%E8%AF%AD%E8%A8%80%E4%BD%9C%E4%B8%9A/</url>
@@ -21,7 +34,7 @@
       <link href="/2019/04/20/%E5%B9%B8%E8%BF%90%E4%B8%8B%E8%BD%BD%E5%99%A8-%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
       <url>/2019/04/20/%E5%B9%B8%E8%BF%90%E4%B8%8B%E8%BD%BD%E5%99%A8-%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</url>
       
-        <content type="html"><![CDATA[<h6 id="19-04-20："><a href="#19-04-20：" class="headerlink" title="19.04.20："></a>19.04.20：</h6><ol><li>新增QQ音乐歌单解析，下载的是320的mp3，其它以后写吧有点懒。</li><li>修复使用内置视频播放器切后台后自动退出播放器的bug</li><li>微调布局ui</li><li>修改界面切换的过渡动画</li></ol>]]></content>
+        <content type="html"><![CDATA[<h6 id="19-05-04："><a href="#19-05-04：" class="headerlink" title="19.05.04："></a>19.05.04：</h6><ol><li>因为更新过程中没有记录所以我也不是很清除更新了啥，主要把原来备份的源码整理了一下加了回来</li><li>修改ui为md2，还没改完下个版本再打磨打磨</li><li>加入幸运浏览器功能，由旧版的源码稍稍优化了下，也还没来的急打磨</li><li>对摩声的QQ和网易的批量下载做了优化（自动识别名字），把摩声批量的链接黏贴在批量下载中即可</li><li>优化更新模式，预计下个版本就可以忽略更新</li><li>修复了一下音乐功能，没花太多力气可以自行体验一下（有些写着flac其实是mp3，也就是获取不到想要的音质会自动降低音质要求，失败的基本是付费的，摩声有内置付费账号，所以推荐他），因为不打算做这个了，改用幸运浏览器里的摩声</li><li>写着写着想到一个bug，软件忘记创建 JinShu/Download 这个文件夹下载时应该会出错，自己创建一下或者修改下载路径</li><li>去除认证改回QQ群验证，看见二维码后，用QQ或TIM的 扫一扫》相册 点第一个二维码就行</li><li>其它自行体验，该版本只是测试版，因为接下去忙别的事情先放出来</li></ol><h6 id="19-04-20："><a href="#19-04-20：" class="headerlink" title="19.04.20："></a>19.04.20：</h6><ol><li>新增QQ音乐歌单解析，下载的是320的mp3，其它以后写吧有点懒。</li><li>修复使用内置视频播放器切后台后自动退出播放器的bug</li><li>微调布局ui</li><li>修改界面切换的过渡动画</li></ol>]]></content>
       
       
       
